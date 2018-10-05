@@ -1,26 +1,20 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    {% include header.html %}
-  </head>
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
   <body>
-    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
-      <div class="container">
-        <span class="skiplink-text">Skip to main content</span>
+
+    {%- include header.html -%}
+
+    <div class="py-5">
+      <div class="container page-content">
+          {{ content }}
       </div>
-    </a>
+    </div>
 
-    {% include docs-navbar.html %}
+    {%- include footer.html -%}
 
-    {% if page.layout == "simple" %}
-      {{ content }}
-    {% else %}
-      <main id="content" role="main">
-        {{ content }}
-      </main>
-    {% endif %}
-
-    {% include footer.html %}
-    {% include scripts.html %}
   </body>
+
 </html>
