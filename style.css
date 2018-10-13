@@ -61,6 +61,13 @@ html, body {
     text-transform: uppercase;
 }
 
+footer {
+  width: 100%;
+  background-color: #343A40;
+  padding: 10% 5% 10% 5%;
+  color:#FFF;
+}
+
 @media (max-width: 768px) {
   .landing-text h1
   {
