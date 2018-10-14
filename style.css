@@ -1,8 +1,15 @@
-html, body {
+html, body{
   padding-top: 25px;
   height: 100%;
   width: 100%;
 }
+
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
+}
+
 section {
  	position: relative;
  	width: 100%;
@@ -84,6 +91,37 @@ footer {
   background-color: #343A40;
   padding: 10% 5% 10% 5%;
   color:#FFF;
+}
+
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}
+
+.item:nth-child(1) {
+    background: #ff3322;
+}
+
+.item:nth-child(2) {
+    background: #44c7f4;
+}
+
+.item:nth-child(3) {
+    background: #6e2585;
+}
+
+.item:nth-child(4) {
+    background: #ffcd00;
+}
+
+/* Changes position of caption */
+.carousel-caption {
+    top: 30%;
+    bottom: auto;
 }
 
 @media (max-width: 768px) {
