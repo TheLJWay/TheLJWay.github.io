@@ -129,6 +129,7 @@ h1, h3 {
     text-shadow: 2px 2px 4px #000000;
 }
 
+
 @media (max-width: 768px) {
   .landing-text h1
   {
