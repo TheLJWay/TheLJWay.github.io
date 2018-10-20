@@ -4,18 +4,18 @@ html, body{
   width: 100%;
 }
 
-.carousel,
-.carousel-inner,
-.carousel-inner .item {
-    height: 100%;
-}
-
 section {
  	position: relative;
  	width: 100%;
  	height: 100%;
  	display: table;
 }
+
+.avatar {
+
+  border-radius: 50%;
+}
+
 .home-wrap {
  	clip: rect(0, auto, auto, 0);
  	position: absolute;
@@ -46,6 +46,48 @@ section {
 	vertical-align: middle;
 }
 
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.container-fluid:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
 .skillbar {
     position: relative;
     display: block;
@@ -65,7 +107,7 @@ section {
 .skillbar-bar {
     height: 3px;
     width: 0px;
-    background: #323232;
+    background: #7c7c7c;
     transition-property: width, background-color;
 }
 
@@ -84,44 +126,6 @@ section {
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
-}
-
-footer {
-  width: 100%;
-  background-color: #343A40;
-  padding: 10% 5% 10% 5%;
-  color:#FFF;
-}
-
-.carousel-indicators li {
-  background-color: #999;
-  background-color: rgba(70,70,70,.25);
-}
-
-.carousel-indicators .active {
-  background-color: #444;
-}
-
-.item:nth-child(1) {
-    background: #ff3322;
-}
-
-.item:nth-child(2) {
-    background: #44c7f4;
-}
-
-.item:nth-child(3) {
-    background: #6e2585;
-}
-
-.item:nth-child(4) {
-    background: #ffcd00;
-}
-
-/* Changes position of caption */
-.carousel-caption {
-    top: 30%;
-    bottom: auto;
 }
 
 h1, h3 {
